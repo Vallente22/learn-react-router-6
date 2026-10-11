@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 function App() {
   return (
@@ -8,10 +8,17 @@ function App() {
   )
 }
 
+function About() {
+  return (
+    <h1>About Page</h1>
+  )
+}
+ 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <Routes>
-      
+      <Route path="/" element={<App/>} />
+      <Route path="/about" element={<About/>} />
     </Routes>
   </BrowserRouter>
 );
