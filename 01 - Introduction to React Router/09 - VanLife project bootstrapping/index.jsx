@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route, } from 'react-router-dom';
-import bgImg from "../01 - Introduction to React Router 6/assets/images/about-hero.png"
 import Home from './components/Home';
 import About from './components/About';
 

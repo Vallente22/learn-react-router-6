@@ -5,6 +5,11 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    flex: 1
 }
 
 nav {
@@ -12,7 +17,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: #FDF5E9;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     padding-block: 10px;
 }
 
@@ -45,7 +49,6 @@ footer {
     color: #7c7c7c;
     text-align: center;
     padding-block: 20px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .home-container {
@@ -56,7 +59,6 @@ footer {
     background-repeat: no-repeat;
     width: 100%;
     height: 90vh;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     position: relative;
     isolation: isolate;
@@ -85,21 +87,39 @@ footer {
 }
 
 .about-page-container {
-
+    background-color: #FDF5E9;
+    height: 120vh;
 }
 
 .about-hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
+.about-page-content > h2 {
+    margin-inline: 0;
 }
 
 .about-page-content {
-
+    margin-inline: 20px;
 }
 
 .about-page-cta {
-
+    background-color: #FEC482;
+    margin: 20px;
+    padding: 30px 20px 20px 20px;
+}
+.about-page-cta > h3 {
+    margin-block: 0;
 }
 
 .link-button {
+    display: inline-block;
     background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin-top: 20px;
 }
